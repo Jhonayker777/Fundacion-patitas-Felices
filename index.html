@@ -12,7 +12,7 @@
     <header>
         <div id="contenedor-logo">
             <img src="imagenes/Logo-header" alt="Logo">
-        </div>  
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -46,38 +46,96 @@
             </div>
         </section>
         <section id="carrusel-netflix">
-            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src=""
-                alt="">
+            <div class="carrusel-track">
+                <!-- Grupo 1 de imágenes -->
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&h=300&fit=crop"
+                        alt="Perro feliz">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=300&fit=crop"
+                        alt="Gato">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=400&h=300&fit=crop"
+                        alt="Voluntario">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?w=400&h=300&fit=crop"
+                        alt="Gatos">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&h=300&fit=crop"
+                        alt="Perro">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=400&h=300&fit=crop"
+                        alt="Evento">
+                </div>
+                <!-- Grupo 2 (duplicado para efecto infinito) -->
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&h=300&fit=crop"
+                        alt="Perro feliz">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=300&fit=crop"
+                        alt="Gato">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=400&h=300&fit=crop"
+                        alt="Voluntario">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?w=400&h=300&fit=crop"
+                        alt="Gatos">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&h=300&fit=crop"
+                        alt="Perro">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=400&h=300&fit=crop"
+                        alt="Evento">
+                </div>
+            </div>
         </section>
-
         <section id="about">
             <article>
-                <h2>¿Quienes somos?</h2>
-                <p>"Somos un grupo de apasionados por la vida animal que decidió dejar de ser espectador para
-                    convertirse en actor del cambio.
-                    En Patitas Felices, cada rescate es un compromiso de por vida."</p>
-                <img src="" alt="">
+                <h2> ¿Quiénes somos?</h2>
+                <p>
+                    "Somos un grupo de apasionados por la vida animal que decidió dejar de ser espectador para
+                    convertirse en actor del cambio. En Patitas Felices, cada rescate es un compromiso de por vida."
+                </p>
+                <button onclick="window.location.href='#catalogo'">
+                     Conoce a nuestros peluditos 
+                </button>
             </article>
         </section>
         <section id="Mision">
-            <h2>Nuestra Mision</h2>
-            <article>
-                <img src="" alt="Emoji">
-                <p>Rescate Inmediato</p>
-            </article>
-            <article>
-                <img src="" alt="Emoji">
-                <p>Sanamoscon amor</p>
-            </article>
-            <article>
-                <img src="" alt="Emoji">
-                <p>Hogares para siempre</p>
-            </article>
-            <article>
-                <img src="" alt="Emoji">
-                <p>Conciencia ciudadana</p>
-            </article>
-        </section>
+    <h2> Nuestra Misión </h2>
+    <div class="mision-container">
+        <article>
+            <div class="mision-icono">🚨</div>
+            <h3>Rescate Inmediato</h3>
+            <p>Respondemos a cada llamado de auxilio, rescatando animales en situación de vulnerabilidad las 24/7.</p>
+        </article>
+        <article>
+            <div class="mision-icono">❤️</div>
+            <h3>Sanamos con amor</h3>
+            <p>Brindamos atención veterinaria, rehabilitación y mucho cariño para recuperar su salud y confianza.</p>
+        </article>
+        <article>
+            <div class="mision-icono">🏠</div>
+            <h3>Hogares para siempre</h3>
+            <p>Encontramos familias responsables que ofrezcan amor eterno y un hogar seguro.</p>
+        </article>
+        <article>
+            <div class="mision-icono">🌍</div>
+            <h3>Conciencia ciudadana</h3>
+            <p>Educamos sobre tenencia responsable y el respeto hacia todos los seres vivos.</p>
+        </article>
+    </div>
+</section>
         <section id="Vision">
             <h2>Nuestra Vision</h2>
             <p>"Nuestros sueños tienen huellas"</p>
@@ -124,110 +182,62 @@
             </article>
         </section>
         <section id="catalogo">
+            <!-- Portada -->
             <article id="portada">
-                <img src="imagenes/Logo-principal" alt="">
-                <p>Cada uno tiene una historia,
-                    solo les falta un hogar para empezar un nuevo capítulo.</p>
-                <img src="" alt="Perro">
+                <div>
+                    <img src="imagenes/logo-principal.png" alt="Logo Patitas Felices">
+                    <p>"Cada uno tiene una historia, solo les falta un hogar para empezar un nuevo capítulo."</p>
+                </div>
+                <div>
+                    <img src="imagenes/perro-portada.jpg" alt="Perro feliz">
+                </div>
             </article>
-
             <article>
                 <div>
-                    <h2>¡LUNA!</h2>
-                    <p>Edad:2 años (Aproximada) <br> Tamaño/Raza:Pequeña / Criolla
-                        Estado:Disponible
-                    </p>
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500&h=500&fit=crop"
+                        alt="Luna">
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <h2>¡LUNA!</h2>
+                    <p>
+                        <strong>Edad:</strong> 2 años (Aproximada)<br>
+                        <strong>Tamaño/Raza:</strong> Pequeña / Criolla<br>
+                        <strong>Estado:</strong> Disponible 🟢
+                    </p>
+                    <button class="btn-ver-mas">Ver más →</button>
                 </div>
+                
             </article>
-
             <article>
                 <div>
-                    <h2>¡LUNA!</h2>
-                    <p>Edad:2 años (Aproximada) <br> Tamaño/Raza:Pequeña / Criolla
-                        Estado:Disponible
+                    <h2>¡BRUNO!</h2>
+                    <p>
+                        <strong>Edad:</strong> 3 años (Adulto)<br>
+                        <strong>Tamaño/Raza:</strong> Labrador - Grande<br>
+                        <strong>Estado:</strong> Disponible 🟢
                     </p>
+                    <button class="btn-ver-mas">Ver más →</button>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=500&h=500&fit=crop"
+                        alt="Bruno">
                 </div>
             </article>
-
-
             <article>
                 <div>
-                    <h2>¡LUNA!</h2>
-                    <p>Edad:2 años (Aproximada) <br> Tamaño/Raza:Pequeña / Criolla
-                        Estado:Disponible
-                    </p>
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=500&h=500&fit=crop"
+                        alt="Toby">
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <h2>¡TOBY!</h2>
+                    <p>
+                        <strong>Edad:</strong> 2 años (Juvenil)<br>
+                        <strong>Tamaño/Raza:</strong> Schnauzer - Mediano<br>
+                        <strong>Estado:</strong> Disponible 🟢
+                    </p>
+                    <button class="btn-ver-mas">Ver más →</button>
                 </div>
             </article>
-
-            <article>
-                <div>
-                    <h2>¡LUNA!</h2>
-                    <p>Edad:2 años (Aproximada) <br> Tamaño/Raza:Pequeña / Criolla
-                        Estado:Disponible
-                    </p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h2>¡LUNA!</h2>
-                    <p>Edad:2 años (Aproximada) <br> Tamaño/Raza:Pequeña / Criolla
-                        Estado:Disponible
-                    </p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h2>¡LUNA!</h2>
-                    <p>Edad:2 años (Aproximada) <br> Tamaño/Raza:Pequeña / Criolla
-                        Estado:Disponible
-                    </p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h2>¡LUNA!</h2>
-                    <p>Edad:2 años (Aproximada) <br> Tamaño/Raza:Pequeña / Criolla
-                        Estado:Disponible
-                    </p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h2>¡LUNA!</h2>
-                    <p>Edad:2 años (Aproximada) <br> Tamaño/Raza:Pequeña / Criolla
-                        Estado:Disponible
-                    </p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </article>
-
         </section>
         <section id="testimonios">
             <article>
@@ -269,4 +279,5 @@
         </section>
     </main>
 </body>
+
 </html>
