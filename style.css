@@ -6,10 +6,16 @@
 
 @font-face {
     font-family: 'MiFuentePersonalizada';
-    src: url('fonts/LuckiestGuy.ttf') format('ttf'),
-         url('fonts/Cafe\ Francoise_D.otf') format('otf');
+    src: url('fonts/LuckiestGuy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'parrafos';
+    src: url('fonts/Cafe\ Francoise_D.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+        
 }
 
 :root {
@@ -31,7 +37,7 @@
 }
 
 body {
-    font-family: "MiFuentePersonalizada", sans-serif;
+    
     background-color: var(--fondo-calido);
     color: var(--texto-profundo);
     line-height: 1.5;
@@ -153,6 +159,7 @@ nav ul li a:hover {
     line-height: 1.15;
     margin-bottom: 1.5rem;
     color: var(--texto-profundo);
+    font-family: 'MiFuentePersonalizada';
 }
 
 #home p {
@@ -160,6 +167,8 @@ nav ul li a:hover {
     color: var(--texto-suave);
     margin-bottom: 2.5rem;
     line-height: 1.7;
+    font-family: 'parrafos';
+    
 }
 
 #home button {
@@ -210,11 +219,13 @@ nav ul li a:hover {
     color: var(--mar);
     margin-bottom: 0.5rem;
     font-weight: 700;
+    font-family: 'MiFuentePersonalizada';
 }
 
 .contenido-estadisticas p {
     color: var(--texto-suave);
     font-weight: 500;
+    font-family: 'parrafos';
 }
 
 
@@ -262,10 +273,13 @@ nav ul li a:hover {
 
 #about {
     padding: 6rem 8%;
-    background: linear-gradient(135deg, var(--blanco) 0%, var(--fondo-calido) 100%);
+    background-image: url('imagenes/fondopatitas.png');
+    background-size: 100%;
+    background-repeat: repeat;
     position: relative;
     overflow: hidden;
 }
+    
 
 #about::before {
     content: '❤️';
@@ -299,7 +313,7 @@ nav ul li a:hover {
     background: linear-gradient(135deg, var(--mar) 0%, var(--cielo) 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    
+    font-family: 'MiFuentePersonalizada';
 }
 
 #about p {
@@ -313,6 +327,7 @@ nav ul li a:hover {
     border-radius: var(--borde-redondo);
     box-shadow: var(--sombra-natural);
     border-left: 5px solid var(--mar);
+    font-family: 'parrafos';
 }
 
 #about p::before {
@@ -388,6 +403,7 @@ nav ul li a:hover {
     color: var(--texto-profundo);
     position: relative;
     display: inline-block;
+    font-family: 'MiFuentePersonalizada';
 }
 
 #Mision h2::before {
@@ -456,12 +472,14 @@ nav ul li a:hover {
     color: var(--mar);
     margin-bottom: 1rem;
     font-weight: 700;
+    font-family: 'MiFuentePersonalizada';
 }
 
 #Mision article p {
     font-size: 0.95rem;
     color: var(--texto-suave);
     line-height: 1.6;
+    font-family: 'parrafos';
 }
 
 
@@ -485,13 +503,15 @@ nav ul li a:hover {
     font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--blanco);
+    font-family: 'MiFuentePersonalizada';
 }
 
-#Vision > p {
+#Vision p {
     font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.95);
     margin-bottom: 3rem;
     font-style: italic;
+    font-family: 'parrafos';
 }
 
 .vision-container {
@@ -541,12 +561,14 @@ nav ul li a:hover {
 #Eventos h2 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    font-family: 'MiFuentePersonalizada';
 }
 
-#Eventos > p {
+#Eventos p {
     font-size: 1.2rem;
     color: var(--texto-suave);
     margin-bottom: 3rem;
+    font-family: 'parrafos';
 }
 
 #Eventos article {
@@ -570,6 +592,7 @@ nav ul li a:hover {
 #Eventos article h3 {
     padding: 1.2rem 1.5rem 0.5rem;
     color: var(--mar);
+    font-family: 'MiFuentePersonalizada';
 }
 
 #Eventos article img {
@@ -581,6 +604,7 @@ nav ul li a:hover {
 #Eventos article p {
     padding: 1rem 1.5rem;
     color: var(--texto-suave);
+    font-family: 'parrafos';
 }
 
 #Eventos article button {
@@ -636,6 +660,7 @@ nav ul li a:hover {
     font-size: 4.2rem;
     color: var(--mar);
     margin-bottom: 1.5rem;
+    font-family: 'MiFuentePersonalizada';
 }
 
 #catalogo article p {
@@ -643,6 +668,7 @@ nav ul li a:hover {
     color: var(--texto-suave);
     line-height: 1.9;
     margin-bottom: 2rem;
+    font-family: 'parrafos';
 }
 
 .btn-adoptar {
@@ -712,17 +738,22 @@ nav ul li a:hover {
 #testimonios h4 {
     color: var(--mar);
     margin-bottom: 1rem;
+    font-family: 'MiFuentePersonalizada';
 }
 
 #testimonios p {
     color: var(--texto-suave);
     line-height: 1.7;
+    font-family: 'parrafos';
 }
 
 #contact {
     padding: 5rem 8%;
     background: linear-gradient(135deg, var(--cielo), var(--mar));
     color: var(--blanco);
+}
+#contact p {
+    font-family: 'parrafos';
 }
 
 #contact article {
@@ -734,6 +765,7 @@ nav ul li a:hover {
 #contact h2 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
+    font-family: 'MiFuentePersonalizada';
 }
 
 #contact input:not([type="checkbox"]):not([type="button"]) {
