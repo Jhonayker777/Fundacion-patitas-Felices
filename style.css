@@ -855,6 +855,32 @@ nav ul li a:hover {
         max-height: 220px !important;
     }
 }
+#luna{
+    background-color: #f2dddc;
+}
+
+#bruno {
+    background-color: #c3c7f4;
+}
+
+#toby {
+    background-color: #c8a8e9;
+}
+#simba {
+    background-color: #e3aadd;
+}
+#lupita {
+    background-color: #f6bcba;
+}
+#nieve {
+    background-color: #f2dddc;
+}
+#max {
+    background-color: #c3c7f4;
+}
+#morita {
+    background-color: #c8a8e9;
+}
 
 #catalogo article div:first-child {
     flex: 1;
