@@ -1,5 +1,3 @@
-/* Usamos Flexbox que es más fácil de entender que el Grid */
-
 .perfil-body {
     background-image: url('../imagenes/fondocuadriculado.png');
     background-repeat: repeat;
@@ -52,7 +50,6 @@ span{
     align-items: center; 
 }
 
-/* La imagen de la mascota */
 .foto-principal {
     width: 400px;
     height: 500px;
@@ -61,7 +58,6 @@ span{
     flex-shrink: 0;
 }
 
-/* La parte donde va el nombre y la info */
 .informacion-perfil {
     width: 100%;
     display: flex;
@@ -69,14 +65,13 @@ span{
 }
 
 .informacion-perfil h1 {
-    color: #82ade4; /* El azul tierno */
+    color: #82ade4; 
     font-size: 55px;
-    margin-bottom: 30px; /* Espacio debajo del nombre */
+    margin-bottom: 30px; 
 }
 
-/* Para separar los párrafos de historia y comportamiento */
 .bloque-texto {
-    margin-bottom: 40px; /* ¡Esto quita lo amontonado! */
+    margin-bottom: 40px;
 }
 
 .bloque-texto h3 {
@@ -85,7 +80,7 @@ span{
 }
 
 .bloque-texto p {
-    line-height: 1.8; /* Espacio entre líneas para que sea legible */
+    line-height: 1.8; 
     margin: 0;
 }
 
@@ -104,19 +99,19 @@ span{
 
 @media (max-width: 850px) {
     .tarjeta-perfil {
-        flex-direction: column; /* En el cel, la foto va arriba y el texto abajo */
+        flex-direction: column; 
         margin: 30px 20px;
         padding: 30px;
-        gap: 30px; /* Menos espacio entre la foto y el texto en el cel */
+        gap: 30px; 
     }
 
     .foto-principal {
-        width: 100%; /* La foto ocupa todo el ancho en el cel */
+        width: 100%; 
         height: 350px;
     }
 
     .informacion-perfil h1 {
-        font-size: 40px; /* El nombre más pequeño en el cel */
+        font-size: 40px; 
         text-align: center;
     }
 }
