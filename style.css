@@ -10,22 +10,23 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'parrafos';
     src: url('fonts/Cafe\ Francoise_D.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-        
+
 }
 
 :root {
-    
+
     --arena: #F5F0EB;
     --cardo: #E8DCD9;
     --cielo: #7B82B8;
     --mar: #5A9BDF;
     --lago: #8BB5E8;
-    
+
     --blanco: #FFFFFF;
     --texto-profundo: #2C3E4E;
     --texto-suave: #5D6E7E;
@@ -37,7 +38,7 @@
 }
 
 body {
-    
+
     background-color: var(--fondo-calido);
     color: var(--texto-profundo);
     line-height: 1.5;
@@ -138,7 +139,8 @@ nav ul li a:hover {
     right: -30px;
     pointer-events: none;
 }
-#home::after{
+
+#home::after {
     content: '🐾';
     position: absolute;
     font-size: 350px;
@@ -151,7 +153,7 @@ nav ul li a:hover {
     max-width: 650px;
     position: relative;
     z-index: 2;
-    
+
 }
 
 #home h1 {
@@ -168,7 +170,7 @@ nav ul li a:hover {
     margin-bottom: 2.5rem;
     line-height: 1.7;
     font-family: 'parrafos';
-    
+
 }
 
 #home button {
@@ -256,7 +258,8 @@ nav ul li a:hover {
 .carrusel-item img {
     width: 100%;
     height: 240px;
-    object-fit: cover; /* Recortar la imagen */
+    object-fit: cover;
+    /* Recortar la imagen */
     box-shadow: var(--sombra-suave);
     transition: all 0.3s;
 }
@@ -266,8 +269,13 @@ nav ul li a:hover {
 }
 
 @keyframes scrollInfinito {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 
@@ -604,29 +612,29 @@ nav ul li a:hover {
     #Vision {
         padding: 3rem 5%;
     }
-    
+
     #Vision h2 {
         font-size: 2.2rem;
     }
-    
+
     .vision-frase {
         font-size: 1.2rem;
         margin-bottom: 2rem;
     }
-    
+
     .vision-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     #Vision article {
         padding: 1.5rem;
     }
-    
+
     .vision-icono {
         font-size: 2.5rem;
     }
-    
+
     #Vision article h3 {
         font-size: 1.2rem;
     }
@@ -718,32 +726,19 @@ nav ul li a:hover {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 8%;
-    gap: 5rem;
+    gap: 50rem;
     transition: all 0.3s;
 }
 
 #portada {
     background: linear-gradient(135deg, var(--arena) 0%, var(--cardo) 100%);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 4rem 8%;
-    text-align: center;
-    border: none;
-    outline: none;
 }
 
-.portada-contenido {
-    max-width: 700px;
-    height: 10%;
-    border: none;
-    outline: none;
+.portada-contenido img{
+    width: 100%;
 }
-
 .portada-logo {
     margin-bottom: 1.5rem;
     border: none;
@@ -755,6 +750,7 @@ nav ul li a:hover {
     height: auto !important;
     display: flex;
     margin: 0 auto;
+    position: relative;
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
@@ -772,6 +768,7 @@ nav ul li a:hover {
     margin: 0 !important;
     border: none;
     outline: none;
+
 }
 
 .portada-imagen {
@@ -779,7 +776,6 @@ nav ul li a:hover {
     justify-content: center !important;
     align-items: center;
     width: 100%;
-    margin-top: 1rem;
     border: none;
     outline: none;
 }
@@ -802,13 +798,13 @@ nav ul li a:hover {
     .portada-frase {
         font-size: clamp(1.1rem, 3.5vw, 1.8rem);
     }
-    
+
     .portada-logo img {
         width: 5.5vw !important;
         min-width: 35px !important;
         max-width: 70px !important;
     }
-    
+
     #portada .portada-imagen img {
         width: 40vw !important;
         height: 40vw !important;
@@ -822,17 +818,17 @@ nav ul li a:hover {
         padding: 3rem 5%;
         gap: 1.5rem;
     }
-    
+
     .portada-frase {
         font-size: clamp(1rem, 4.5vw, 1.5rem);
     }
-    
+
     .portada-logo img {
         width: 6vw !important;
         min-width: 30px !important;
         max-width: 60px !important;
     }
-    
+
     #portada .portada-imagen img {
         width: 45vw !important;
         height: 45vw !important;
@@ -845,13 +841,13 @@ nav ul li a:hover {
     .portada-frase {
         font-size: clamp(0.9rem, 5vw, 1.2rem);
     }
-    
+
     .portada-logo img {
         width: 7vw !important;
         min-width: 25px !important;
         max-width: 50px !important;
     }
-    
+
     #portada .portada-imagen img {
         width: 55vw !important;
         height: 55vw !important;
@@ -860,10 +856,10 @@ nav ul li a:hover {
     }
 }
 
-#catalogo article  div:first-child {
+#catalogo article div:first-child {
     flex: 1;
     max-width: 550px;
-    
+
 }
 
 #catalogo article h2 {
@@ -961,6 +957,7 @@ nav ul li a:hover {
     background: linear-gradient(135deg, var(--cielo), var(--mar));
     color: var(--blanco);
 }
+
 #contact p {
     font-family: 'parrafos';
     grid-column: 1 / -1;
@@ -974,22 +971,27 @@ nav ul li a:hover {
     margin: 0 auto;
     text-align: center;
 }
+
 #email {
     grid-column: 1 / -1;
 }
+
 #btn-contact {
     grid-column: 1 / -1;
 }
+
 #contact h2 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     font-family: 'MiFuentePersonalizada';
     grid-column: 1 / -1;
 }
+
 #check {
     grid-column: 1 / -1;
     text-align: left;
 }
+
 #contact input:not([type="checkbox"]):not([type="button"]) {
     width: 100%;
     padding: 1rem 1.2rem;
@@ -1078,10 +1080,21 @@ footer::before {
     animation: fadeInUp 0.6s ease-out backwards;
 }
 
-.footer-columna:nth-child(1) { animation-delay: 0.1s; }
-.footer-columna:nth-child(2) { animation-delay: 0.2s; }
-.footer-columna:nth-child(3) { animation-delay: 0.3s; }
-.footer-columna:nth-child(4) { animation-delay: 0.4s; }
+.footer-columna:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.footer-columna:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.footer-columna:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.footer-columna:nth-child(4) {
+    animation-delay: 0.4s;
+}
 
 
 .footer-logo {
@@ -1248,35 +1261,35 @@ footer::before {
         text-align: center;
         padding: 3rem 5%;
     }
-    
+
     .footer-logo {
         justify-content: center;
     }
-    
+
     .footer-redes {
         justify-content: center;
     }
-    
+
     .footer-columna h4::after {
         left: 50%;
         transform: translateX(-50%);
     }
-    
+
     .footer-links-container {
         flex-direction: column;
         align-items: center;
         gap: 0.8rem;
     }
-    
+
     .separador {
         display: none;
     }
-    
+
     .footer-bottom-container {
         flex-direction: column;
         text-align: center;
     }
-    
+
     footer::before {
         display: none;
     }
@@ -1286,11 +1299,11 @@ footer::before {
     .footer-container {
         padding: 2rem 5%;
     }
-    
+
     .footer-links-adicionales {
         padding: 1rem 5%;
     }
-    
+
     .footer-bottom {
         padding: 1rem 5%;
     }
@@ -1301,26 +1314,41 @@ footer::before {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.contenido-estadisticas, #Mision article, #Vision article, #Eventos article, #testimonios article {
+.contenido-estadisticas,
+#Mision article,
+#Vision article,
+#Eventos article,
+#testimonios article {
     animation: fadeInUp 0.6s ease-out backwards;
 }
 
-.contenido-estadisticas:nth-child(1) { animation-delay: 0.1s; }
-.contenido-estadisticas:nth-child(2) { animation-delay: 0.2s; }
-.contenido-estadisticas:nth-child(3) { animation-delay: 0.3s; }
+.contenido-estadisticas:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.contenido-estadisticas:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.contenido-estadisticas:nth-child(3) {
+    animation-delay: 0.3s;
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 @media (max-width: 1200px) {
-    .mision-container, .vision-container {
+
+    .mision-container,
+    .vision-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.8rem;
     }
@@ -1331,83 +1359,86 @@ html {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
     }
-    
+
     #home {
         text-align: center;
         justify-content: center;
         padding: 0 5%;
     }
-    
+
     #home h1 {
         font-size: 2.5rem;
     }
-    
+
     #home p {
         font-size: 1rem;
     }
-    
+
     #estadisticas {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
-    
+
     .contenido-estadisticas {
         width: 80%;
     }
-    
-    #Mision, #Vision {
+
+    #Mision,
+    #Vision {
         padding: 3rem 5%;
     }
-    
-    #Mision h2, #Vision h2 {
+
+    #Mision h2,
+    #Vision h2 {
         font-size: 2.2rem;
     }
-    
-    .mision-container, .vision-container {
+
+    .mision-container,
+    .vision-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     #Eventos article {
         width: calc(100% - 2rem);
         max-width: 380px;
     }
-    
+
     #catalogo article {
         flex-direction: column;
         text-align: center;
         padding: 3rem 5%;
         gap: 2rem;
     }
-    
-    #catalogo article  div:first-child {
+
+    #catalogo article div:first-child {
         max-width: 100%;
     }
-    
+
     #catalogo article h2 {
         font-size: 2.5rem;
     }
-    
+
     #catalogo article img {
         max-width: 300px;
         height: 300px;
     }
-    
+
     #testimonios {
         grid-template-columns: 1fr;
     }
-    
+
     #contact {
         padding: 3rem 5%;
     }
-    
+
     #contact article {
         padding: 0 1rem;
     }
