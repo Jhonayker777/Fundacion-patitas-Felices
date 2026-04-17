@@ -41,7 +41,7 @@ body {
     font-family: 'parrafos', 'Segoe UI', system-ui, sans-serif;
 }
 
-/* ========== HEADER RESPONSIVE ========== */
+
 header {
     background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(12px);
@@ -120,7 +120,7 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* ========== HOME SECTION ========== */
+
 #home {
     min-height: 85vh;
     background: linear-gradient(125deg, var(--arena) 0%, var(--cardo) 100%);
@@ -205,7 +205,7 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-/* ========== ESTADÍSTICAS ========== */
+
 #estadisticas {
     display: flex;
     justify-content: center;
@@ -248,7 +248,7 @@ nav ul li a:hover {
     font-size: clamp(0.8rem, 1.2vw, 1rem);
 }
 
-/* ========== CARRUSEL INFINITO ========== */
+
 #carrusel-netflix {
     overflow: hidden;
     padding: 3rem 0;
@@ -290,7 +290,7 @@ nav ul li a:hover {
     100% { transform: translateX(-50%); }
 }
 
-/* ========== ABOUT SECTION ========== */
+
 #about {
     padding: 4rem 8% 0 8%;
     background-image: url('imagenes/fondopatitas.png');
@@ -383,7 +383,6 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* ========== MISIÓN ========== */
 #Mision {
     padding: clamp(3rem, 8vw, 5rem) 8%;
     background: linear-gradient(135deg, var(--arena) 0%, var(--cardo) 100%);
@@ -466,7 +465,6 @@ nav ul li a:hover {
     font-family: 'parrafos';
 }
 
-/* ========== VISIÓN ========== */
 #Vision {
     padding: clamp(3rem, 8vw, 5rem) 8%;
     background: linear-gradient(135deg, var(--lago) 0%, var(--mar) 100%);
@@ -557,7 +555,6 @@ nav ul li a:hover {
     font-family: 'parrafos';
 }
 
-/* ========== EVENTOS ========== */
 #Eventos {
     padding: clamp(3rem, 8vw, 5rem) 8%;
     background: var(--blanco);
@@ -632,7 +629,6 @@ nav ul li a:hover {
     background: var(--cielo);
 }
 
-/* ========== PORTADA DEL CATÁLOGO ========== */
 #portada {
     background: linear-gradient(135deg, var(--arena) 0%, var(--cardo) 100%);
     min-height: 60vh;
@@ -880,7 +876,6 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* ========== FOOTER RESPONSIVE ========== */
 footer {
     background: linear-gradient(135deg, var(--texto-profundo) 0%, #1a2a3a 100%);
     color: var(--blanco);
@@ -1064,7 +1059,6 @@ footer::before {
     font-family: 'parrafos';
 }
 
-/* ========== ANIMACIONES ========== */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1092,7 +1086,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ========== RESPONSIVE EXTRA ========== */
+
 @media (max-width: 1024px) {
     .mision-container,
     .vision-container {
