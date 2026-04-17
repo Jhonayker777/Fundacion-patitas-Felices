@@ -103,12 +103,15 @@ nav ul li a:hover {
     color: var(--mar);
 }
 
+nav{
+    font-family: 'parrafos';
+}
 #boton-contato a {
-    background: var(--mar);
+    background: #6f79bd;
     color: var(--blanco);
     padding: 0.7rem 2rem;
     border-radius: var(--borde-muy-redondo);
-    box-shadow: 0 4px 12px rgba(90, 155, 223, 0.25);
+    box-shadow: 0 8px 20px rgba(168, 90, 223, 0.25);
 }
 
 #boton-contato a::after {
@@ -197,7 +200,7 @@ nav ul li a:hover {
     border-radius: var(--borde-muy-redondo);
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 6px 20px rgba(90, 155, 223, 0.3);
+    box-shadow: 0 6px 20px rgba(148, 90, 223, 0.3);
 }
 
 #home button:hover {
@@ -205,6 +208,9 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
+#home button{
+    font-family: 'parrafos';
+}
 
 #estadisticas {
     display: flex;
@@ -603,6 +609,7 @@ nav ul li a:hover {
     width: 100%;
     height: clamp(160px, 20vw, 200px);
     object-fit: cover;
+    border-radius: 8%;
 }
 
 #Eventos article p {
@@ -739,7 +746,9 @@ nav ul li a:hover {
     color: var(--blanco);
     text-decoration: none;
 }
-
+.btn-adoptar {
+    font-family: parrafos;
+}
 .btn-adoptar:hover {
     background: var(--cielo);
     transform: translateY(-3px);
@@ -826,6 +835,16 @@ nav ul li a:hover {
     font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
 
+#check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#check{    font-family: 'parrafos';
+    color: #e3aadd;
+}
 #contact input:not([type="checkbox"]):not([type="button"]) {
     width: 100%;
     padding: 0.8rem 1rem;
@@ -877,7 +896,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background: linear-gradient(135deg, var(--texto-profundo) 0%, #1a2a3a 100%);
+    background: linear-gradient(135deg, var(--texto-profundo) 0%, #6f79bd 100%);
     color: var(--blanco);
     margin-top: 0;
     position: relative;
@@ -1220,4 +1239,17 @@ html {
     #contact article {
         padding: 0 1rem;
     }
+}
+
+#footer h4 {
+    font-family: 'MiFuentePersonalizada';
+}
+#footer p {
+    font-family: 'parrafos';
+}
+#footer a {
+    font-family: 'parrafos';
+}
+#footer .footer-logo h3 {
+    font-family: 'parrafos';
 }
