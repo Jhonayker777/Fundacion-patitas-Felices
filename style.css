@@ -107,7 +107,7 @@ nav{
     font-family: 'parrafos';
 }
 #boton-contato a {
-    background: #6f79bd;
+    background: var(--mar);
     color: var(--blanco);
     padding: 0.7rem 2rem;
     border-radius: var(--borde-muy-redondo);
@@ -156,7 +156,7 @@ nav{
 }
 
 #home div {
-    max-width: 550px;
+    max-width: 150em;
     position: relative;
     z-index: 2;
     flex: 1;
@@ -171,7 +171,7 @@ nav{
 #perro-home img {
     max-width: 100%;
     height: auto;
-    width: 400px;
+    width: 50em;
 }
 
 #home h1 {
@@ -183,7 +183,7 @@ nav{
 }
 
 #home p {
-    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    font-size: 2em;
     color: var(--texto-suave);
     margin-bottom: 2rem;
     line-height: 1.6;
@@ -638,7 +638,7 @@ nav{
 
 #portada {
     background: linear-gradient(135deg, var(--arena) 0%, var(--cardo) 100%);
-    min-height: 60vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -687,7 +687,7 @@ nav{
 }
 
 #catalogo article {
-    min-height: 100vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -1111,6 +1111,23 @@ html {
     .vision-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 5%;
+        min-height: 40vh;
+    }
+    #about {
+        background-image: url('imagenes/fondopatitas.png');
+        background-attachment: fixed;
+        background-position: 50%;
+    }
+    #testimonios {
+        grid-template-columns: 1, 1fr;
+    }
+    #familia-rodriguez {
+        column-span: all;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1129,9 +1146,13 @@ html {
         flex-direction: column;
         text-align: center;
         padding: 3rem 5%;
+        min-height: 40vh;
     }
-    
-    #home > div {
+    #home::after {
+        content: none;
+    }
+
+    #home div {
         max-width: 100%;
     }
     
@@ -1152,6 +1173,17 @@ html {
     .mision-container,
     .vision-container {
         grid-template-columns: 1fr;
+    }
+    
+    #about {
+    background-image: url('imagenes/fondopatitas.png');
+    background-attachment: fixed;
+    background-position: 50%;
+    }
+
+    #quienes-somos-container  img{
+        width: 100%;
+        
     }
     
     #Eventos article {
@@ -1175,7 +1207,7 @@ html {
     
     #portada {
         flex-direction: column;
-        padding: 3rem 5%;
+        padding: 3rem 5% 0 5%;
     }
     
     .footer-container {
@@ -1213,9 +1245,26 @@ html {
     footer::before {
         display: none;
     }
+    #perro-home img{
+        width: 100%;
+    }
+    
 }
-
 @media (max-width: 480px) {
+    
+    
+    #home::after {
+        content: none;
+    }
+
+    #home {
+        min-height: 40vh;
+    }
+    
+    #perro-home img{
+        width: 100%;
+    }
+    
     .portada-logo img {
         width: 80px;
     }
@@ -1238,6 +1287,11 @@ html {
     
     #contact article {
         padding: 0 1rem;
+    }
+    
+    #quienes-somos-container  img{
+        width: 50%;
+        
     }
 }
 
