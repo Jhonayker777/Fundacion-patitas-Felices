@@ -865,6 +865,48 @@ nav{
     transform: scale(1.1);
     accent-color: var(--arena);
 }
+#contact label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact label span {
+    font-family: 'parrafos';
+}
+#contact textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 14px;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    font-family: inherit;
+}
+
+#contact textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--arena);
+}
+
+#contact select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 14px;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    font-family: parrafos;
+}
+#contact select option {
+    font-family: parrafos;
+}
+select {
+    color: var(--texto-suave);
+}
+#contact select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--arena);
+}
 
 #check {
     text-align: left;

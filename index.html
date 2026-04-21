@@ -178,7 +178,7 @@
             </article>
             <article>
                 <h3>¡Gran Donatón de Amor!</h3>
-                <img src="imagenes/donaton.png" alt="Donacion">
+                <img src="imagenes/donaton.png" alt=" Donacion">
                 <p>Fecha:25 de Abril - Parque San Pio. <br> Descripcion: Recolectaremos alimento, cobijas y medicinas
                     para nuestros nuevos rescatados. <br>¡Te esperamos!</p>
                 <button>Quiero asistir</button>
@@ -351,13 +351,29 @@
         </section>
         <section id="contact">
             <article>
-                <h2>Contátanos</h2>
+                <h2>Contáctanos</h2>
                 <p>"Dejanos tus datos y nos pondremos en contacto contigo pronto.
                     ¡Cada mensaje es un paso mas hacia un final feliz!"
                 </p>
                 <input type="text" placeholder="First name">
                 <input type="text" placeholder="Last name">
                 <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="ciudad" id="ciudad" placeholder="Your city" required>
+                <input type="tel" name="telefono" id="telefono" placeholder="+57 300 000 0000">
+                <div id="seleccion">
+                    <select name="consulta" id="consulta" required>
+                        <option value="" disabled selected>Select an option...</option>
+                        <option value="Adopcion">🐾 Adopción</option>
+                        <option value="Donacion">💛 Donación</option>
+                        <option value="Voluntariado">🙌 Voluntariado</option>
+                        <option value="Info">ℹ️ Información general</option>
+                        <option value="Otro">💬 Otro</option>
+                    </select>
+                </div>
+                <div id="message">
+                    <textarea id="mensaje" name="mensaje" placeholder="Tell us how we can help you… " required></textarea>
+                </div>
+
                 <div id="check">
                     <input type="checkbox" name="" id="checkbox" value="">
                     <label for="checkbox">I agree with <span> the terms and conditions</span></label>
@@ -430,7 +446,7 @@
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom-container">
-                <p>&copy; 2024 Patitas Felices Fundación Animal. Todos los derechos reservados.</p>
+                <p>&copy; 2026 Patitas Felices Fundación Animal. Todos los derechos reservados.</p>
                 <p class="footer-dev">Diseñado con ❤️ para los peluditos</p>
             </div>
         </div>
