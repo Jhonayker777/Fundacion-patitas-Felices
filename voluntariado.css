@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'parrafos';
+    src: url('fonts/KGPerfectPenmanship.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('fonts/LuckiestGuy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.perfil-body {
+    background-image: url('../imagenes/fondocuadriculado.png');
+    background-repeat: repeat;
+    background-size: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    color: #5B61B2;
+    font-family: "parrafos";
+    margin-top: 2%;
+    margin-bottom: 15px;
+}
+h1{
+    color: #acb1f1;
+    font-family: "Mifuentepersonalizada";
+    margin-top: 0;
+}
+p{
+    color: #5B61B2;
+    font-family: "Parrafos";
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+span{
+    color: #5B61B2;
+    font-family: "Parrafos", sans-serif;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.boton-adopcion{
+    font-family: "Parrafos", sans-serif;
+}
+
+.aesthetic-btn-adopcion {
+    border-radius: 20px;
+    background-color: #DEC1DB;
+    border: none;
+    margin: 0 20%;
+    padding: 5% 0;
+    font-family: 'parrafos';
+    color: #5B61B2;
+}
+
+
+.tarjeta-perfil {
+    background-color: rgb(255, 255, 255);
+    border: 8px solid #DEC1DB; 
+    border-radius: 40px;
+    
+
+    margin: 10% auto 0 auto;
+    padding: 60px;
+    max-width: 950px;
+    
+   
+    display: flex;
+    flex-direction: row; 
+    gap: 50px; 
+    align-items: center; 
+}
+
+
+
+.informacion-perfil {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1% 0;
+}
+
+.informacion-perfil h1 {
+    color: #82ade4; 
+    font-size: 55px;
+    margin-bottom: 30px; 
+}
+
+.bloque-texto {
+    margin-bottom: 40px;
+}
+
+.bloque-texto h3 {
+    color: #5B61B2;
+    margin-bottom: 10px;
+}
+
+.bloque-texto p {
+    line-height: 1.8; 
+    margin: 0;
+}
+
+
+.button-inscripcion {
+    background-color: #6DA0E1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 18px;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (max-width: 850px) {
+    .tarjeta-perfil {
+        flex-direction: column; 
+        margin: 30px 20px;
+        padding: 30px;
+        gap: 30px; 
+    }
+
+    .foto-principal {
+        width: 100%; 
+        height: 350px;
+    }
+
+    .informacion-perfil h1 {
+        font-size: 40px; 
+        text-align: center;
+    }
+}
+
+formulario-inscripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+formulario-inscripcion label {
+    font-family: 'parrafos';
+    color: #5B61B2;
+}
